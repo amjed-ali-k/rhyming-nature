@@ -30,7 +30,7 @@ type Props = {
 
 export default function SponsorPage({ sponsor }: Props) {
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+    title: 'Rhyming Nature - 2023',
     description: META_DESCRIPTION
   };
 
