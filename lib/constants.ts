@@ -14,19 +14,20 @@
  * limitations under the License.
  */
 
-export const SITE_URL = 'https://demo.vercel.events';
+export const SITE_URL = 'https://rhyming-nature.gptcperinthamanna.in';
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin;
 export const TWITTER_USER_NAME = 'vercel';
-export const BRAND_NAME = 'ACME';
-export const SITE_NAME_MULTILINE = ['ACME', 'Conf'];
-export const SITE_NAME = 'ACME Conf';
+export const BRAND_NAME = 'GPTC Perinthalmanna';
+export const TITLE = 'Rhyming Nature';
+export const SITE_NAME_MULTILINE = ['Rhyming', 'Nature'];
+export const SITE_NAME = 'Rhyming Nature';
 export const META_DESCRIPTION =
-  'This is an open source demo that Next.js developers can clone, deploy, and fully customize for events. Created through collaboration of marketers, designers, and developers at Vercel.';
+  'Rhyming nature international poetry festival event is conducted by Govt Polytechnic college Perinthalmnna and National Digital Library of India Club';
 export const SITE_DESCRIPTION =
-  'An interactive online experience by the community, free for everyone.';
-export const DATE = '01 January 2022';
-export const SHORT_DATE = 'Jan 1 - 9:00am PST';
-export const FULL_DATE = 'Jan 1st 9am Pacific Time (GMT-7)';
+  'International poetry reading experience with the best poets in the world';
+export const DATE = '29 January 2023';
+export const SHORT_DATE = 'Jan 29 - 5:00am IST';
+export const FULL_DATE = 'Jan 29th 5pm Indian Standerd Time (GMT+5:30)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 
@@ -41,16 +42,16 @@ export const REPO = 'https://github.com/vercel/virtual-event-starter-kit';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
   {
-    name: 'Live Stage',
-    route: '/stage/a'
+    name: 'Inauguration',
+    route: '/stage/inauguration'
   },
+  // {
+  //   name: 'Vercel Stage',
+  //   route: '/stage/c'
+  // },
   {
-    name: 'Vercel Stage',
-    route: '/stage/c'
-  },
-  {
-    name: '100ms Stage',
-    route: '/stage/m'
+    name: 'Recitation Section',
+    route: '/stage/recitation'
   },
   {
     name: 'Schedule',
@@ -61,12 +62,8 @@ export const NAVIGATION = [
     route: '/speakers'
   },
   {
-    name: 'Expo',
+    name: 'Hosts',
     route: '/expo'
-  },
-  {
-    name: 'Jobs',
-    route: '/jobs'
   }
 ];
 

@@ -24,10 +24,7 @@ import Logo from './icons/icon-logo';
 import MobileMenu from './mobile-menu';
 import Footer from './footer';
 import React from 'react';
-import DemoButton from './hms/demo-cta';
-import RoomCta from './hms/demo-cta/room-cta';
 import { hmsConfig } from './hms/config';
-import ViewSource from './view-source';
 
 type Props = {
   children: React.ReactNode;
@@ -52,14 +49,15 @@ export default function Layout({
       <div className={styles.background}>
         {!hideNav && (
           <header className={cn(styles.header)}>
-            <div className={styles['header-logos']}>
+            <div className={styles['header-logos'] + ' gap-4'}>
               <MobileMenu key={router.asPath} />
               <Link href="/">
                 {/* eslint-disable-next-line */}
-                <a className={styles.logo}>
+                <a className={styles.logo + ' shrink-0'}>
                   <Logo />
                 </a>
               </Link>
+              <div className="w-fit flex shrink-0 font-bold text-lg">GPTC Perinthalmanna</div>
             </div>
             <div className={styles.tabs}>
               {NAVIGATION.map(({ name, route }) => (
@@ -74,18 +72,19 @@ export default function Layout({
                 </a>
               ))}
             </div>
-
             {(hmsConfig.hmsIntegration && isLive && !disableCta.includes(activeRoute)) ||
             activeRoute === '/' ? (
               <div className={cn(styles['header-right'])}>
-                {activeRoute === '/' ? <DemoButton /> : <RoomCta />}
+                {/* {activeRoute === '/' ? <DemoButton /> : */}
+                {/* <RoomCta /> */}
+                {/* } */}
               </div>
             ) : (
               <div />
             )}
           </header>
         )}
-        <ViewSource />
+        {/* <ViewSource /> */}
         <div className={styles.page}>
           <main className={styles.main} style={layoutStyles}>
             <SkipNavContent />

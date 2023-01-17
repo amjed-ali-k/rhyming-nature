@@ -29,13 +29,9 @@ type Props = {
   defaultPageState?: PageState;
 };
 
-export default function Conf({
-  defaultUserData,
-  sharePage,
-  defaultPageState = 'registration'
-}: Props) {
+export default function Conf({ defaultUserData, defaultPageState = 'registration' }: Props) {
   const [userData, setUserData] = useState<UserData>(defaultUserData);
-  const [pageState, setPageState] = useState<PageState>(defaultPageState);
+  const [, setPageState] = useState<PageState>(defaultPageState);
 
   return (
     <ConfDataContext.Provider
@@ -47,20 +43,8 @@ export default function Conf({
     >
       <Layout>
         <ConfContainer>
-          {pageState === 'registration' && !sharePage ? (
-            <>
-              <Hero />
-              <Form />
-              <LearnMore />
-            </>
-          ) : (
-            <Ticket
-              username={userData.username}
-              name={userData.name}
-              ticketNumber={userData.ticketNumber}
-              sharePage={sharePage}
-            />
-          )}
+          <Hero />
+          <LearnMore />
         </ConfContainer>
       </Layout>
     </ConfDataContext.Provider>

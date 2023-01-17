@@ -28,7 +28,7 @@ export function HostedByVercel() {
       rel="noopener noreferrer"
     >
       <div className={styles['secondary-text']}>Created by </div>
-      <VercelLogo color="white" />
+      Amjed Ali K
     </a>
   );
 }
@@ -48,12 +48,12 @@ export default function Footer() {
         <div className={styles['footer-center-group']}>
           <p className={styles['footer-paragraph']}>
             <a
-              href={REPO}
+              href={'https://github.com/amjed-ali-k'}
               className={styles['footer-link']}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Source Code
+              Made by Amjed Ali K
             </a>
           </p>
           <div className={styles['footer-separator']} />
