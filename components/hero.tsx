@@ -44,7 +44,7 @@ export default function Hero() {
         </p>
       </div>
       <div className="flex justify-center my-8">
-        <Button onClick={() => router.push('/stage/inuaguration')}>Watch Now</Button>
+        <Button onClick={() => router.push('/stage/inauguration')}>Watch Now</Button>
       </div>
     </div>
   );
